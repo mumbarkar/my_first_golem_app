@@ -17,7 +17,33 @@ coverage](https://codecov.io/gh/mumbarkar/my_first_golem_app/graph/badge.svg)](h
 You can install the development version of `{histogramApp}` like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# Install from GitHub (after you upload the repo)
+# install.packages("devtools")
+devtools::install_github("mumbarkar/my_first_golem_app")
+#> Using GitHub PAT from the git credential store.
+#> Downloading GitHub repo mumbarkar/my_first_golem_app@HEAD
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#>          checking for file 'C:\Users\lenovo\AppData\Local\Temp\Rtmp0oXYwu\remotes4cac37ea19f8\mumbarkar-my_first_golem_app-a67ca0d/DESCRIPTION' ...  ✔  checking for file 'C:\Users\lenovo\AppData\Local\Temp\Rtmp0oXYwu\remotes4cac37ea19f8\mumbarkar-my_first_golem_app-a67ca0d/DESCRIPTION' (652ms)
+#>       ─  preparing 'histogramApp': (604ms)
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>       ─  checking for LF line-endings in source and make files and shell scripts (646ms)
+#>   ─  checking for empty or unneeded directories
+#>      Omitted 'LazyData' from DESCRIPTION
+#>       ─  building 'histogramApp_0.0.0.9000.tar.gz'
+#>      
+#> 
+#> Installing package into 'C:/Users/lenovo/AppData/Local/R/win-library/4.5'
+#> (as 'lib' is unspecified)
+
+# install.packages("pak")
+pak::pak("mumbarkar/my_first_golem_app")
+#> 
+#> ✔ Updated metadata database: 4.52 MB in 3 files.
+#> ℹ Updating metadata database✔ Updating metadata database ... done
+#>  
+#> ℹ No downloads are needed
+#> ✔ 1 pkg + 36 deps: kept 36 [37.3s]
 ```
 
 ## Run
@@ -36,7 +62,7 @@ This README has been compiled on the
 
 ``` r
 Sys.time()
-#> [1] "2026-01-04 19:16:04 IST"
+#> [1] "2026-01-04 19:27:45 IST"
 ```
 
 Here are the tests results and package coverage:
@@ -45,7 +71,7 @@ Here are the tests results and package coverage:
 devtools::check(quiet = TRUE)
 #> ℹ Loading histogramApp
 #> ── R CMD check results ──────────────────────────── histogramApp 0.0.0.9000 ────
-#> Duration: 1m 53s
+#> Duration: 1m 12s
 #> 
 #> ❯ checking tests ...
 #>   See below...
@@ -70,7 +96,7 @@ devtools::check(quiet = TRUE)
 #>   Problems with news in 'NEWS.md':
 #>   No news entries found.
 #> 
-#> ❯ checking R code for possible problems ... [16s] NOTE
+#> ❯ checking R code for possible problems ... [10s] NOTE
 #>   mod_poisson_hist_server : <anonymous>: no visible global function
 #>     definition for 'rpois'
 #>   mod_poisson_hist_server : <anonymous>: no visible global function
@@ -159,8 +185,11 @@ devtools::check(quiet = TRUE)
 ``` r
 covr::package_coverage()
 #> Error:
-#> ! Failure in `C:/Users/lenovo/AppData/Local/Temp/RtmpS4lY87/R_LIBS2b7832697b76/histogramApp/histogramApp-tests/testthat.Rout.fail`
-#> lass=\"btn btn-default action-button\" style=\"display: none;\">go</button>"
+#> ! Failure in `C:/Users/lenovo/AppData/Local/Temp/Rtmp0oXYwu/R_LIBS4cac36282bf7/histogramApp/histogramApp-tests/testthat.Rout.fail`
+#>  type=\"button\" class=\"btn btn-default action-button\" style=\"display: none;\">"
+#> - "  <span class=\"action-label\">go</span>"
+#> - "</button>"
+#> + "<button id=\"go_filter\" type=\"button\" class=\"btn btn-default action-button\" style=\"display: none;\">go</button>"
 #> ── Failure ('test-mod_poisson_hist.R:32:3'): module ui works ───────────────────
 #> `ui` has class 'bslib_fragment, shiny.tag', not class 'shiny.tag.list'.
 #> 

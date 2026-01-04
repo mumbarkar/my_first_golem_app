@@ -30,7 +30,7 @@ You can install the development version of `{histogramApp}` like so:
 # install.packages("devtools")
 devtools::install_github("mumbarkar/my_first_golem_app")
 
-# install.packages("pak")
+# install.packages("pak") 
 pak::pak("mumbarkar/my_first_golem_app")
 ```
 
