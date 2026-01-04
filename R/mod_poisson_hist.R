@@ -7,6 +7,7 @@
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
+#' @import bslib
 mod_poisson_hist_ui <- function(id) {
   ns <- NS(id)
 

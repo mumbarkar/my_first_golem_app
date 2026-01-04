@@ -18,6 +18,7 @@ output: github_document
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test coverage](https://codecov.io/gh/mumbarkar/my_first_golem_app/graph/badge.svg)](https://app.codecov.io/gh/mumbarkar/my_first_golem_app)
+[![R-CMD-check](https://github.com/mumbarkar/my_first_golem_app/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mumbarkar/my_first_golem_app/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 ## Installation
