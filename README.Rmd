@@ -26,7 +26,12 @@ output: github_document
 You can install the development version of `{histogramApp}` like so:
 
 ```{r}
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# Install from GitHub (after you upload the repo)
+# install.packages("devtools")
+devtools::install_github("mumbarkar/my_first_golem_app")
+
+# install.packages("pak")
+pak::pak("mumbarkar/my_first_golem_app")
 ```
 
 ## Run
